@@ -12,3 +12,19 @@ OPERAZIONI:
     - Altrimenti Se il numero stampato è divisibile per 5 stampi variabile Buzz
     - Altrimenti stampi il numero
 */
+
+const numero = 'Il numero è '
+
+for (let i = 1; i <= 100; i++) {
+
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log(numero + 'FizzBuzz');
+    } else if (i % 3 === 0) {
+        console.log(numero + 'Fizz')
+    } else if (i % 5 === 0) {
+        console.log(numero + 'Buzz');
+    } else {
+        console.log(numero + i);
+    }
+
+}
